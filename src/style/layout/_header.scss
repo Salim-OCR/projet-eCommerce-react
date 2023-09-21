@@ -1,0 +1,18 @@
+    header {
+        height: 20vh;
+        background: $color1;
+        position: relative;
+
+        h1 {
+            position: absolute;
+            left: 50%;
+            top: 58%;
+            transform: translate(-50%, 0);
+            padding: 50px;
+            background: $color2;
+            width: 600px;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 3rem;
+        }
+    }

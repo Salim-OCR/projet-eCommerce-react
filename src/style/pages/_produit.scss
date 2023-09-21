@@ -1,0 +1,124 @@
+#pageProduit {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+
+    .content {
+        width: 100%;
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        align-items: center;
+
+        @media screen and (max-width: 980px) {
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .img_produit {
+            width: 95%;
+            margin: auto;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+                height: 80vh;
+
+                @media screen and (max-width: 980px) {
+                    width: 70%;
+                    object-fit: cover;
+                    height: 60vh;
+
+
+                }
+            }
+        }
+
+        .infos {
+            background: $color1;
+            height: 60vh;
+            width: 95%;
+
+            h2 {
+                padding: 50px 0 10px;
+                font-size: 4rem;
+                color: $color3;
+            }
+
+            h3 {
+                text-transform: uppercase;
+                padding-bottom: 20px;
+                color: $color3;
+            }
+
+            h4 {
+                text-transform: capitalize;
+                font-size: 1.1rem;
+                font-family: 'Courier New', Courier, monospace;
+                margin-right: 5px;
+            }
+
+            p {
+                text-align: justify;
+                font-size: 1.1rem;
+                padding: 0 15px 15px;
+                line-height: 1.3rem;
+            }
+
+
+            .options {
+                display: flex;
+                flex-direction: column;
+                // flex-wrap: wrap;
+                padding: 0 15px;
+                margin: 25px auto;
+
+                ul {
+                    display: flex;
+                    justify-content: space-evenly;
+                    flex-wrap: wrap;
+
+                    li {
+                        width: 75px;
+                        margin: 5px 5px;
+
+                        label {
+                            display: flex;
+                            justify-content: space-between;
+                            text-transform: capitalize;
+
+                            .custom-checkbox {
+                                transform: scale(1.3);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .quantity {
+                display: flex;
+                padding: 0 15px;
+                margin-bottom: 15px;
+
+                input {
+                    text-align: center;
+                }
+            }
+        }
+
+        button {
+            width: 85%;
+            margin: 50px auto 0;
+            background: $color2;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

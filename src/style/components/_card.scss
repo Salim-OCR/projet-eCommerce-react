@@ -1,0 +1,42 @@
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    display: flex;
+
+    .img_produit {
+        img {
+            max-width: 150px;
+        }
+    }
+
+    .produit {
+        flex: 1;
+        padding-left: 10px;
+
+        h3 {
+            margin: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+
+        .btnCommender {
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+}

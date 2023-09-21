@@ -1,0 +1,111 @@
+footer {
+    width: 100%;
+    margin: auto;
+    background: $color2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#footerPanier {
+    h2 {
+        text-transform: uppercase;
+        margin: 20px 0;
+        color: $color3;
+        letter-spacing: 3px;
+        text-shadow: 1px 2px 3px $black;
+    }
+
+    .formulaire {
+        width: 90%;
+
+        margin: auto;
+        position: relative;
+
+        form {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-areas:
+                "L R"
+                "B B"
+            ;
+
+            @media screen and (max-width: 900px) {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            label {
+
+                font-size: 1.1rem;
+                padding: 5px 0;
+            }
+
+            input {
+                padding: 10px 5px;
+                background: transparent;
+                border: none;
+                border-bottom: 2px solid $black;
+                text-align: center;
+                outline: none;
+
+                &:focus,
+                :valid {
+                    border-bottom-color: $color5;
+                }
+            }
+        }
+
+        .content-left {
+            grid-area: L;
+        }
+
+        .content-right {
+            grid-area: R;
+            width: 80%;
+            margin: auto;
+
+            label {
+                padding-bottom: 30px;
+                font-size: 1.5rem;
+                color: $color3;
+                text-shadow: 1px 2px 3px $black;
+            }
+        }
+
+        .content-bottom {
+            grid-area: B;
+            width: 50%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                margin: 0;
+                background: transparent;
+                border: 1px solid $black;
+
+                &:hover {
+                    box-shadow: 1px 2px 3px $black;
+                    color: $color3;
+                    background: $black;
+                }
+            }
+
+            p {
+                margin: 10px 0 0;
+                text-transform: uppercase;
+                font-weight: 900;
+                letter-spacing: 2px;
+                text-shadow: 1px 2px 3px $color3;
+            }
+        }
+    }
+}

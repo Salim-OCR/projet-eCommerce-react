@@ -1,0 +1,48 @@
+#pageConfirm {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .content {
+        margin: 50px auto 20px;
+        width: 900px;
+        background: $color2;
+        box-shadow: 1px 2px 3px $black;
+
+        h2 {
+            padding: 50px 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 2.3rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+            margin: 5px 0;
+        }
+
+        ul {
+
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin: 15px 0;
+
+            li{
+                width: 300px;
+                
+                .resum{
+                    border: 1px solid $color3;
+                    padding: 10px;
+                    margin: 5px;
+                }
+            }
+        }
+        button{
+            margin: 10px auto;
+            width: 55%;
+        }
+
+    }
+}
